@@ -1,0 +1,79 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/camel-case": "off",
+    "@typescript-eslint/camelcase": "off", // because apparently both of these rules exist
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "prefer-const": "warn",
+    "no-const-assign": "error",
+    "no-var": "error",
+    "no-new-object": "error",
+    "object-shorthand": "warn",
+    "quote-props": ["warn", "as-needed"],
+    "prefer-object-spread": "warn",
+    "prefer-destructuring": "warn",
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "prefer-template": "error",
+    "template-curly-spacing": ["error", "never"],
+    "no-eval": "error",
+    "no-useless-escape": "warn",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "wrap-iife": "warn",
+    "no-loop-func": "warn",
+    "default-param-last": "warn",
+    "no-new-func": "error",
+    "space-before-blocks": "warn",
+    "arrow-spacing": "error",
+    "arrow-parens": "warn",
+    "arrow-body-style": "warn",
+    "no-duplicate-imports": "error",
+    "no-multi-assign": "error",
+    "eqeqeq": "error",
+    "brace-style": "error",
+    "keyword-spacing": "warn",
+    "space-infix-ops": "warn",
+    "no-extra-boolean-cast": "off",
+    "eol-last": "error",
+    "no-multiple-empty-lines": "warn",
+    "space-in-parens": "warn",
+    "array-bracket-spacing": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "comma-spacing": "warn",
+    "func-call-spacing": "warn",
+    "key-spacing": "warn",
+    "comma-style": "warn",
+    "comma-dangle": ["warn", "always-multiline"],
+    "semi": "error",
+    "camelcase": "off",
+    "no-underscore-dangle": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
